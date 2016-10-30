@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="utf-8" >
+		<meta name="description" content="beschrijving van de webpagina" >
+		<meta name="keywords" content="trefwoorden, gescheiden, door, komma's">
+		<title>Mohamed Nakrachi</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+</head>
+	<body>
+<div id="header">
+<h1>Mohamed Nakrachi</h1>
+</div>
+
+<h2>Openingsuren</h2>
+
+<table>
+  <tr>
+    <th>dag van de week</th>
+    <th>overdag</th>
+      <th>s'avonds</th>
+  </tr>
+  <tr>
+    <td>maandag-vrijdag</td>
+    <td>9.00-18.00</td>
+    <td>19.00-22.00</td>
+  </tr>
+  <tr>
+    <td>zaterdag</td>
+    <td>9.00-17.00</td>
+    <td rowspan="2"> gesloten</td>
+  </tr>
+    <tr>
+    <td>zondag</td>    
+    <td>10.00-17.00</td>
+    
+    </tr>
+</table>
+        
+    <h2>Persoonlijkvoorkeur</h2>
+    
+<fieldset style="width:480px">	<legend>Mijn Voorkeuren</legend>
+    <form action="action_page.php">
+  Lievelingskleur
+  <input type="text" name="lievelingskleur" >
+        <br> 
+      Favoriete seizoen  <input type="radio"> lente <input type="radio"> zomer <input type="radio"> herfst <input type="radio"> winter
+    <br>
+        Favoriete maand van het jaar <select id="maand" name="maand">
+<option disabled>kies</option>
+<option value=januari>januari</option>
+<option value=februari>februari</option>
+<option value=maart>maart</option>
+<option value=april>april</option>
+<option value=mei>mei</option>
+<option value=juni>juni</option>
+<option value=juli>juli</option>
+<option value=augustus>augustus</option>
+<option value=september>september</option>
+<option value=oktober>oktober</option>
+<option value=november>november</option>
+<option value=december>december</option>
+</select>
+    <br>
+        Ik vind mezelf <input type="checkbox"> vriendelijk <input type="checkbox"> sportief <input type="checkbox"> energiek <input type="checkbox"> leergierig
+    <br>
+    als ik een avond vrij ben, dan... 
+        <br>
+        <textarea id="invul" name="invul" cols="50" rows="4">Ga ik ...</textarea>
+
+
+    <br>
+    
+</fieldset>
+ <fieldset style="width:480px">	<legend>Formulier ingevuld</legend>
+    <form action="asction_page.php">
+
+        
+<input id="zend" type="submit" value="Formulier verzenden" />
+
+        
+        </fieldset>
+<div id="footer">
+Copyright © Nakrachi.Mohamed
+</div>
+		
+	</body>
+</html>
